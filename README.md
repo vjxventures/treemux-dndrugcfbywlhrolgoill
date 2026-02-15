@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DebateGPT
+
+An AI-powered debate training platform where users practice debating against intelligent AI opponents and receive real-time feedback on their arguments.
+
+## Features
+
+- **AI Opponent**: Debate against Claude (Anthropic) which argues the opposing position with evidence-based reasoning
+- **Real-time Judge**: GPT-4 analyzes each of your arguments, providing scores, strengths, weaknesses, and actionable tips
+- **Performance Tracking**: View average scores and detailed analysis for all your arguments
+- **Multiple Topics**: Choose from suggested debate topics or create your own
+- **Streaming Responses**: Real-time streaming for natural conversation flow
+
+## Tech Stack
+
+- **Next.js 16** with App Router and Turbopack
+- **AI SDK v6** (@ai-sdk/react) for streaming AI responses
+- **Anthropic Claude 3.5 Sonnet** as debate opponent
+- **OpenAI GPT-4o** as argument judge
+- **shadcn/ui** for beautiful, accessible UI components
+- **Tailwind CSS** for styling
+- **TypeScript** for type safety
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone and install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+2. Set up environment variables:
+Create a `.env.local` file with your API keys:
+```bash
+ANTHROPIC_API_KEY=your_anthropic_key
+OPENAI_API_KEY=your_openai_key
+```
+
+3. Run the development server:
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Choose a Topic**: Select from suggested topics or enter your own
+2. **Pick Your Side**: Decide whether to argue FOR or AGAINST the topic
+3. **Start Debating**: Make your arguments and receive:
+   - AI opponent responses (Claude argues the opposite side)
+   - Judge analysis (GPT-4 evaluates your argument quality)
+4. **Track Progress**: View your average score and detailed feedback for each argument
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: React components using AI SDK's `useChat` hook for streaming
+- **API Route**: Edge runtime endpoint handling dual AI model streaming
+- **Multi-AI System**:
+  - Claude 3.5 Sonnet: Generates opposing arguments
+  - GPT-4o: Analyzes argument quality with structured feedback
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built For TreeHacks 2026
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created to demonstrate:
+- Advanced AI integration with multiple models
+- Real-time streaming user interfaces
+- Practical educational application of LLMs
+- Type-safe full-stack TypeScript development
