@@ -1,0 +1,3 @@
+# DebateArena - The Ultimate AI Showdown
+
+Ever wondered which AI is actually better at argumentation? DebateArena settles the debate by having AI models debate each other. Watch Claude Sonnet 4.5 and GPT-4 go head-to-head in real-time on any topic you choose, with streaming responses that let you see their arguments unfold live. After three intense rounds, vote for the winner and see an AI judge's objective analysis of logic, persuasiveness, and rhetorical skill. It's educational, entertaining, and reveals how different AI models approach the same problem - perfect for AI enthusiasts, educators, and anyone curious about the future of intelligent systems.
