@@ -25,3 +25,35 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Animated gradient background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Smooth typing effect */
+@keyframes typing {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.typing-indicator {
+  animation: typing 1s ease-in-out infinite alternate;
+}
