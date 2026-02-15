@@ -1,0 +1,3 @@
+# DebateGPT
+
+DebateGPT is an AI-powered debate training platform that helps users sharpen their critical thinking and argumentation skills by debating against intelligent AI opponents. Users choose a controversial topic, pick a side, and engage in real-time debates where Claude 3.5 Sonnet argues the opposing position while GPT-4o acts as a judge, providing instant feedback on argument quality, logical fallacies, and areas for improvement. What makes this impressive is the seamless integration of multiple AI models working in concert—one as adversary, one as mentor—creating an educational experience that feels natural and engaging while providing actionable insights that help users become better communicators and thinkers.
