@@ -1,0 +1,2 @@
+You are participating in TreeHacks 2026, Stanford's flagship hackathon. Build an innovative, production-ready web app that could win prizes. The app must be creative, technically impressive, and solve a real problem. API keys for Anthropic, OpenAI, and OpenRouter are available in the environment. Deploy to Vercel and make it demo-ready. Focus on: novelty, feasibility, demo readiness, and market clarity.
+Start thinking about what to build then build it. You have full autonomy to execute.
